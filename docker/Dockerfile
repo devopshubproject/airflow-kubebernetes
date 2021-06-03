@@ -35,8 +35,8 @@ RUN pip install apache-airflow==1.10.10
 RUN pip install 'apache-airflow[kubernetes]'
 RUN pip install 'apache-airflow[postgres]'
 
-COPY ./docker/airflow-init.sh /tmp/airflow-init.sh
+COPY airflow-init.sh /tmp/airflow-init.sh
 
-COPY ./docker/bootstrap.sh /bootstrap.sh
+COPY bootstrap.sh /bootstrap.sh
 RUN chmod +x /bootstrap.sh
 ENTRYPOINT ["/bootstrap.sh"]
