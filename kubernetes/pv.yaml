@@ -1,0 +1,37 @@
+# The backing volume can be anything you want, it just needs to be `ReadWriteOnce`
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: airflow-dags
+spec:
+  accessModes:
+    - ReadOnlyMany
+  capacity:
+    storage: 2Gi
+  hostPath:
+    path: /airflow-dags/
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: airflow-logs
+spec:
+  accessModes:
+    - ReadOnlyMany
+  capacity:
+    storage: 2Gi
+  hostPath:
+    path: /airflow-logs/
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: test-volume
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 2Gi
+  hostPath:
+    path: /airflow-dags/

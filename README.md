@@ -1,4 +1,5 @@
 # airflow-kubernetes
+[<img src="./docs/images/airflow-logo.png" align="right">](https://airflow.apache.org/)
 This Project contains the script (Kubernetes mainfest files) to deploy the HA cluster.
 
 # **Airflow**
@@ -84,3 +85,61 @@ In other words, On scheduling a task with airflow Kubernetes executor, the sched
 
 
 
+### Additional
+
+**_Okteto Pipeline_** 
+
+Created a _Okteto Pipeline_ for doing a quick check of the project
+
+~Tried this to implement the knowledge gained from my previous project post!~
+
+#### Let's build
+
+#### *Pre-Requsites*
+
+> Kubectl
+> Docker
+> Docker registry
+> Okteto workspace for testing
+
+###### Docker Image build.
+
+| Created an image based on python with airflow preinstalled. The files can be found under ./docker/ folder.
+
+```
+FROM python:3.7-slim-buster
+.
+.
+.
+RUN pip install --upgrade pip
+RUN pip install apache-airflow==1.10.10
+.
+.
+ENTRYPOINT ["/bootstrap.sh"]
+```
+
+###### Kubernetes Deployment
+
+| Deploy the airflow image/application using the kube mainfest files. The files can be found under ./kube/ folder.
+
+
+# Follow-Me
+
+[LinkedIn](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.fondsenwerving.nl%2Fl%2Flibrary%2Fdownload%2Furn%3Auuid%3Af739722d-f5d5-4627-9d58-84303afaf38b%2Fontwerp%2Bzonder%2Btitel%2B%25283%2529.png%3FscaleType%3D6%26width%3D1520%26height%3D940&imgrefurl=https%3A%2F%2Fwww.fondsenwerving.nl%2Fnieuws%2Fbericht%2F2020%2F02%2F20%2FFundraiser-Online-onderzoekt-hoe-goede-doelen-het-op-LinkedIn-doen&tbnid=Ojh7HM67GcOXXM&vet=12ahUKEwjl_PvJg_zwAhXENuwKHUFIC0QQMygAegUIARDRAQ..i&docid=9bbljc1E86ov1M&w=1520&h=940&q=linkedin&ved=2ahUKEwjl_PvJg_zwAhXENuwKHUFIC0QQMygAegUIARDRAQ)(https://www.linkedin.com/in/premkumarpalanichamy/)
+
+~~Reference~~
+- https://airflow.incubator.apache.org/docs/apache-airflow/stable/index.html
+- https://www.qubole.com/tech-blog/how-to-install-apache-airflow-to-run-different-executors/
+- https://dev.to/bhavaniravi/how-to-set-up-airflow-on-kubernetes-24i8
+- https://fullstaq.com/run-airflow-kubernetes/#:~:text=using%20the%20kubernetesexecutor
+- https://hub.kubeapps.com/charts/stable/airflow
+- https://github.com/bitnami/charts/tree/master/bitnami/airflow
+- https://www.astronomer.io/events/recaps/intro-to-airflow/
+- https://marclamberti.com/blog/running-apache-airflow-locally-on-kubernetes/
+- https://github.com/apache/airflow
+- https://towardsdatascience.com/a-journey-to-airflow-on-kubernetes-472df467f556
+- https://medium.com/swlh/apache-airflow-and-kubernetes-pain-points-and-lessons-learned-a8124296a612
+- https://github.com/jghoman/awesome-apache-airflow
+- https://hub.docker.com/r/apache/airflow
+- https://github.com/apache/airflow/blob/main/Dockerfile
+- https://airflow.apache.org/docs/apache-airflow/stable/installation.html#prerequisites
