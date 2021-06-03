@@ -53,9 +53,7 @@ At its core, Airflow is simply a queuing system built on top of a metadata datab
 
 ![Airflow Architecture](./docs/images/Airflow-Arch.png)
 
-~~
-\*For more leaning, do refer the offical page of Apache Airflow. I have shared the link under the reference heading\*
-~~
+~~For more leaning, do refer the offical page of Apache Airflow. I have shared the link under the reference heading~~
 
 ### Executor
 
