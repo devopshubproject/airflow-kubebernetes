@@ -1,4 +1,4 @@
-# airflow-kubebernetes
+# airflow-kubernetes
 This Project contains the script (Kubernetes mainfest files) to deploy the HA cluster.
 
 # **Airflow**
@@ -53,7 +53,7 @@ At its core, Airflow is simply a queuing system built on top of a metadata datab
 
 ![Airflow Architecture](./docs/images/Airflow-Arch.png)
 
-\* For more leaning, do refer the offical page of Apache Airflow. I have shared the link under the reference heading *\
+\* For more leaning, do refer the offical page of Apache Airflow. I have shared the link under the reference heading \*
 
 ### Executor
 
