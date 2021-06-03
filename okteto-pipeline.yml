@@ -1,0 +1,5 @@
+icon: ./docs/images/Airflow-Arch.png
+deploy:
+  - okteto build -t premkumarpalanichamy/airflow-kubernetes:latest .
+devs:
+  - docker/
