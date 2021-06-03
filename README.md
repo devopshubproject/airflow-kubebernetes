@@ -125,7 +125,6 @@ ENTRYPOINT ["/bootstrap.sh"]
 
 # Follow-Me
 
-![LinkedIn](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.fondsenwerving.nl%2Fl%2Flibrary%2Fdownload%2Furn%3Auuid%3Af739722d-f5d5-4627-9d58-84303afaf38b%2Fontwerp%2Bzonder%2Btitel%2B%25283%2529.png%3FscaleType%3D6%26width%3D1520%26height%3D940&imgrefurl=https%3A%2F%2Fwww.fondsenwerving.nl%2Fnieuws%2Fbericht%2F2020%2F02%2F20%2FFundraiser-Online-onderzoekt-hoe-goede-doelen-het-op-LinkedIn-doen&tbnid=Ojh7HM67GcOXXM&vet=12ahUKEwjl_PvJg_zwAhXENuwKHUFIC0QQMygAegUIARDRAQ..i&docid=9bbljc1E86ov1M&w=1520&h=940&q=linkedin&ved=2ahUKEwjl_PvJg_zwAhXENuwKHUFIC0QQMygAegUIARDRAQ)
 [LinkedIn](https://www.linkedin.com/in/premkumarpalanichamy/)
 
 ~~Reference~~
